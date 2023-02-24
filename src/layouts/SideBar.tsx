@@ -59,17 +59,21 @@ interface SidebarProps extends BoxProps {
 export default function SideBar({ onClose, ...rest }: SidebarProps) {
   return (
     <Box
-      transition="3s ease"
-      bg={"#7A60C6"}
       borderRight="1px"
+      borderRightColor="gray.300"
       w={{ base: "full", md: 60 }}
       pos="fixed"
       h="full"
       {...rest}
     >
       <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
-        <Text fontSize="2xl" fontFamily="monospace" fontWeight="bold">
-          Logo
+        <Text
+          fontSize="2xl"
+          fontFamily="monospace"
+          fontWeight="bold"
+          color="#7A60C6"
+        >
+          Welcome!
         </Text>
         <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
       </Flex>
@@ -98,7 +102,7 @@ const NavItem = ({ icon, children, ...rest }: NavItemProps) => {
       style={{ textDecoration: "none" }}
       _focus={{ boxShadow: "none" }}
       fontWeight="bold"
-      color={"white"}
+      color={"#7A60C6"}
     >
       <Flex
         align="center"
@@ -108,17 +112,18 @@ const NavItem = ({ icon, children, ...rest }: NavItemProps) => {
         role="group"
         cursor="pointer"
         _hover={{
-          bg: "white",
-          color: "#7A60C6",
+          bg: "#7A60C6",
+          color: "white",
         }}
         {...rest}
       >
         {icon && (
           <Icon
             mr="4"
+            color="#7A60C6"
             fontSize="16"
             _groupHover={{
-              color: "#7A60C6",
+              color: "white",
             }}
             as={icon}
           />
