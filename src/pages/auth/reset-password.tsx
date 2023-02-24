@@ -37,8 +37,6 @@ export default function ResetPassword() {
             <InputGroup size="md">
               <Input
                 pr="4.5rem"
-                type="email"
-                value={input}
                 placeholder="OTP Code"
                 borderTop="0"
                 borderLeft={0}
