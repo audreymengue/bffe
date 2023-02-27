@@ -24,7 +24,7 @@ export default function SidebarWithHeader({
         onClose={() => onClose}
         display={{ base: "none", md: "block" }}
       />
-      <Drawer
+      {/* <Drawer
         autoFocus={false}
         isOpen={isOpen}
         placement="left"
@@ -36,7 +36,7 @@ export default function SidebarWithHeader({
         <DrawerContent>
           <SideBar onClose={onClose} />
         </DrawerContent>
-      </Drawer>
+      </Drawer> */}
       {/* mobilenav */}
       <Box ml={{ base: 0, md: 60 }} p="4">
         {children}

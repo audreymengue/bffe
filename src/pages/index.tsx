@@ -79,15 +79,6 @@ export default function Home() {
         <StatsCard label="Most viewed" value="12USD" />
         <StatsCard label="Most viewed" value="12USD" />
       </SimpleGrid>
-      <ResponsiveContainer width="100%" aspect={3}>
-        <LineChart width={300} height={100} data={data}>
-          <Line type="monotone" dataKey="pv" stroke="#8884d8" strokeWidth={2} />
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip />
-          <Legend />
-        </LineChart>
-      </ResponsiveContainer>
     </div>
   );
 }
